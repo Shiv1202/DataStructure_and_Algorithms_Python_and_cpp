@@ -1,6 +1,7 @@
 # Implemeting Bucket sort on an unsorted array.
 """**********************************************
-This is mainly useful when input is uniformaly distributed 
+This is mainly useful when input is uniformaly 
+distributed 
 over a range. Ex(0.0 to 1.0)
 ALgorithm:
 bucket_sort(arr, n)
