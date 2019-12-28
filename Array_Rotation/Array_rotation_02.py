@@ -1,7 +1,11 @@
 # Implementation of Array Rotation in python 3.
 """********************************************
 NOTE: ++++++++++ METHOD 2 +++++++++++++++++++++
-(Rotate One by One).
+(A Juggling Algorithm).
+In this Instead of moving One by One, divide
+the array in different sets where number of 
+set is equal to GCD of n and d and move the 
+elements within the set.
 Basic Algo:
 left_rotate(arr, d, n)
 start
