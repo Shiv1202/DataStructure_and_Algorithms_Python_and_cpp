@@ -20,7 +20,6 @@ class Linkedlist:
     list object."""
     def __init__(self):
         self.head = None
-
         """ Function for inserting 
         a node at the start of List."""
     def push_start(self, new_data):
@@ -30,7 +29,6 @@ class Linkedlist:
         new_node.next = self.head
         # Move head to point to new node.
         self.head = new_node
-
         """ Function for printing the 
         contents of linked list."""
     def print_list(self):
