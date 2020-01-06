@@ -47,4 +47,6 @@ def main():
     c_list.push(17)
     # Print List.
     c_list.print_list()
-    
+
+if __name__ == "__main__":
+    main()
