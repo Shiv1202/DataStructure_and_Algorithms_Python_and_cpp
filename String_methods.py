@@ -14,7 +14,17 @@ otherwise "False"."""
 s = "hello"
 print(s.islower())
 
-# 2) islower()
+# 2) isupper()
 """ This Function return "True" if all the 
-letters in the string are lower cased, 
+letters in the string are upper cased, 
 otherwise "False"."""
+# Example Code.
+s = "HELLO"
+print(s.isupper())
+
+""" 3) len() = return length of the string.
+    4) count("string, beg, end") = Count the occurencr of mentioned substring.
+    5) center() = This is used to surround the string with a character repeated both side.
+    6) isalpha() = return True when all Character of string are alphabets.
+    7) isalnum() = return True when all Character of String are the combination of alphabets and numbers.
+    8) join() = This Function is used to join a sequence of strings mentioned in its arguments with the string."""
