@@ -5,5 +5,15 @@ def triangle(B):
     return total
 
 for i in range(int(input())):
-    B = int(input())
-    print(triangle(B))
+    Base = int(input())
+    print(triangle(Base))
+
+
+# Method 2
+for _ in range(int(input())):
+    b = int(input())
+    c = 0
+    while b > 3:
+        c += (b // 2 -1)
+        b -= 2
+    print(c)
