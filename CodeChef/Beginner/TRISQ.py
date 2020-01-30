@@ -10,10 +10,10 @@ for i in range(int(input())):
 
 
 # Method 2
-for _ in range(int(input())):
-    b = int(input())
-    c = 0
-    while b > 3:
-        c += (b // 2 -1)
-        b -= 2
-    print(c)
+# for _ in range(int(input())):
+#     b = int(input())
+#     c = 0
+#     while b > 3:
+#         c += (b // 2 -1)
+#         b -= 2
+#     print(c)
