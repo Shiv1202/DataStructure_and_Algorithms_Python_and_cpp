@@ -14,8 +14,6 @@ Output: 0
 Explanation: The result cannot be 2,
 because [-2,-1] is not a subarray.
 ---------------> END <------------------"""
-
-
 # Solution Class.
 class Solution:
     def maxProduct(self, nums):
