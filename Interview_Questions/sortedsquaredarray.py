@@ -33,7 +33,8 @@ def sorted_square_arr(arr, n):
 # Main Function.
 def main():
     l = [-6, -4, -3, 1, 2, 5]
-    print(sorted_square_arr(l, len(l))) 
+    n = len(l)
+    print(sorted_square_arr(l, n))
 
 # Driver Code.
 if __name__ == "__main__":
