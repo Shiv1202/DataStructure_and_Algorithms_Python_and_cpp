@@ -26,6 +26,7 @@ def productExceptSelf(nums, m):
     temp = 1
     for i in range(l-2, -1, -1):
         f[i] *= temp*nums[i+1]
+        print(f[i])
         temp *= nums[i + 1]
     for i in range(len(f)):
         f[i] = f[i] % m
@@ -35,7 +36,7 @@ def productExceptSelf(nums, m):
 # Main Function.
 def main():
     s = 12
-    arr = [1, 2, 3, 7, 5]
+    arr = [1, 2, 3, 4]
     res = productExceptSelf(arr, s)
     print(res)
 
