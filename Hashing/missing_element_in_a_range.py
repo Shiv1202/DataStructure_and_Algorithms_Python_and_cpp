@@ -15,13 +15,12 @@ def missing_ele(arr, n, l, h):
     for i in range(l, h + 1):
         if i not in s:
             print(i, end = " ")
-
 # Main Function.
 def main():
     arr = [1, 3, 5, 4]
     n = len(arr)
     low, high = 1, 10
     missing_ele(arr, n, low, high)
-
+# Driver Code.
 if __name__ == "__main__":
     main()
