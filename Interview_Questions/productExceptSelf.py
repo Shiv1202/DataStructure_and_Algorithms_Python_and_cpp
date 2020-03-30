@@ -26,7 +26,6 @@ def productExceptSelf(nums, m):
     temp = 1
     for i in range(l-2, -1, -1):
         f[i] *= temp*nums[i+1]
-        print(f[i])
         temp *= nums[i + 1]
     for i in range(len(f)):
         f[i] = f[i] % m
