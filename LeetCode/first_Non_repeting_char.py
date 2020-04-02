@@ -39,7 +39,7 @@ only lowercase letters
 #             else:
 #                 char_counter[i] = 1
 #         for i in range(len(s)):
-#             if char_counter[i] == 1:
+#             if char_counter[s[i]] == 1:
 #                 return i
 #             break
 #         return -1 
