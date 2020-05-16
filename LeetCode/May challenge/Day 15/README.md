@@ -69,6 +69,7 @@ Then, Kadane's algorithm is given by the following psuedocode:
     
     
 **My Solution**
+
 This Solution is also based on Kadane's algorithm but shightly modified.
 We are going to maintain 4 different variable
 1. `curr_max` = Current maximum of array at index `i`.
