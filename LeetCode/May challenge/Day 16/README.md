@@ -24,11 +24,11 @@ Output: 2->3->6->7->1->5->4->NULL
 ## Solution
 Put the odd nodes in a linked list and the even nodes in another. Then link the evenList to the tail of the oddList.
 
-A well-formed LinkedList need two pointers head and tail to support operations at both ends. The variables `head` and `odd` are the head pointer and tail pointer of one LinkedList we call `oddList`; the variables `temp` and `even` are the head pointer and tail pointer of another LinkedList we call `evenList`. The algorithm traverses the original LinkedList and put the odd nodes into the oddList and the even nodes into the evenList. To traverse a LinkedList we need at least one pointer as an iterator for the current node. But here the pointers odd and even not only serve as the tail pointers but also act as the iterators of the original list.
+A well-formed LinkedList need two pointers head and tail to support operations at both ends. The variables `head` and `odd` are the head pointer and tail pointer of one LinkedList we call `oddList`, the variables `temp` and `even` are the head pointer and tail pointer of another LinkedList we call `evenList`. The algorithm traverses the original LinkedList and put the odd nodes into the oddList and the even nodes into the evenList. To traverse a LinkedList we need at least one pointer as an iterator for the current node. But here the pointers odd and even not only serve as the tail pointers but also act as the iterators of the original list.
 
 **Approach**
 * we have a `head` pointer pointing to the `digit 1 or the 1st index`.
-* we declare 2 pointers `odd` pointer to `iterate over the odd indices` and an `even` pointer to `iterate over the odd indices`.
+* we declare 2 pointers `odd` pointer to `iterate over the odd indices` and an `even` pointer to `iterate over the even indices`.
  the `odd` is assigned the `1st index` and the `even` is assigned the `2nd index`.
  ```
  ListNode* odd=head;
