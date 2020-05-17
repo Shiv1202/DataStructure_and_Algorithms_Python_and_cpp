@@ -27,18 +27,18 @@ Put the odd nodes in a linked list and the even nodes in another. Then link the 
 A well-formed LinkedList need two pointers head and tail to support operations at both ends. The variables `head` and `odd` are the head pointer and tail pointer of one LinkedList we call `oddList`; the variables `temp` and `even` are the head pointer and tail pointer of another LinkedList we call `evenList`. The algorithm traverses the original LinkedList and put the odd nodes into the oddList and the even nodes into the evenList. To traverse a LinkedList we need at least one pointer as an iterator for the current node. But here the pointers odd and even not only serve as the tail pointers but also act as the iterators of the original list.
 
 **Approach**
-*we have a `head` pointer pointing to the `digit 1 or the 1st index`.
-*we declare 2 pointers `odd` pointer to `iterate over the odd indices` and an `even` pointer to `iterate over the odd indices`.
+* we have a `head` pointer pointing to the `digit 1 or the 1st index`.
+* we declare 2 pointers `odd` pointer to `iterate over the odd indices` and an `even` pointer to `iterate over the odd indices`.
  the `odd` is assigned the `1st index` and the `even` is assigned the `2nd index`.
  ```
  ListNode* odd=head;
  ListNode* even=head->next;
  ```
-*as we have to concatinate `even indices` after the `odd indices` we declare a `temporary pointer or temp` to `preserve the start of the even indices linkedlist`.
+* as we have to concatinate `even indices` after the `odd indices` we declare a `temporary pointer or temp` to `preserve the start of the even indices linkedlist`.
 ```
 ListNode* temp=head->next;
 ```
-*now, with this `odd` pointer we assign it values such that it connects to the next `odd index` and so on...
+* now, with this `odd` pointer we assign it values such that it connects to the next `odd index` and so on...
  Similarly for the `even` pointer we follow the same process.
  ```
  while(odd->next && even->next)
@@ -53,7 +53,7 @@ ListNode* temp=head->next;
         //1->3->5->7...
         //similarly, 2->4->6->8...
  ```
- *at last, we assign the the preserved start of even indices, `temp` to the `next of odd pointer`, and return the `head`
+ * at last, we assign the the preserved start of even indices, `temp` to the `next of odd pointer`, and return the `head`
  ```
         odd->next=temp;
         return head;
