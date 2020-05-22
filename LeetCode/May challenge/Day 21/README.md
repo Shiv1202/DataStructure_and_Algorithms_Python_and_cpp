@@ -1,4 +1,4 @@
-#Count Square Submatrices with All Ones
+# Count Square Submatrices with All Ones
 
 **Example 1**
 
@@ -75,21 +75,25 @@ here minimum of three values is 1 and 1+1=2. so matrix becomes
 
 **Note** the value `2` represents the completion of a `2x2` matrix. Now for subsequent values
 
-0 1 1 1     0 1 1 1
-1 1 2 **1**---> 1 1 2 **2**
 0 1 1 1     0 1 1 1  
+1 1 2 **1**---> 1 1 2 **2**  
+0 1 1 1     0 1 1 1    
 
-0 1 1 1     0 1 1 1
-1 1 2 2---> 1 1 2 2
-0 **1** 1 1 0 **1** 1 1 
 
-0 1 1 1     0 1 1 1
-1 1 2 2---> 1 1 2 2
-0 1 **1** 1 0 1 **2** 1 
+0 1 1 1     0 1 1 1  
+1 1 2 2---> 1 1 2 2  
+0 **1** 1 1 0 **1** 1 1   
 
-0 1 1 1     0 1 1 1
-1 1 2 2---> 1 1 2 2
-0 1 2 **1** 0 1 2 **3**
+
+0 1 1 1     0 1 1 1  
+1 1 2 2---> 1 1 2 2  
+0 1 **1** 1 0 1 **2** 1  
+
+
+0 1 1 1     0 1 1 1  
+1 1 2 2---> 1 1 2 2  
+0 1 2 **1** 0 1 2 **3**  
+
 
 so final manipuated matrix is  
 ```
