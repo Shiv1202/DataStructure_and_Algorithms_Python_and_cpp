@@ -87,7 +87,7 @@ here minimum of three values is 1 and 1+1=2. so matrix becomes
 
 0 1 1 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 1 1 1  
 1 1 2 2--->1 1 2 2  
-0 1 **1** 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 1 **2** 1  
+0 1 **1** 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 1 **2** 1  
 
 
 0 1 1 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 1 1 1  
