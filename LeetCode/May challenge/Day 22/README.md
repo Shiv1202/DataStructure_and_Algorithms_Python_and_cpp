@@ -7,8 +7,8 @@ Given a string, sort it in decreasing order based on the frequency of characters
 ```
 Input: "tree"
 Output: "eert"
-Explanation:`e` appears twice while `r` and `t` both appear once.
-So `e` must appear before both `r` and `t`. Therefore `eetr` is also a valid answer.
+Explanation: 'e' appears twice while 'r' and 't' both appear once.
+So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
 ```
 
 **Example 2**
@@ -16,8 +16,8 @@ So `e` must appear before both `r` and `t`. Therefore `eetr` is also a valid ans
 ```
 Input: "cccaaa"
 Output: "cccaaa"
-Explanation:Both `c` and `a` appear three times, so `aaaccc` is also a valid answer.
-Note that `cacaca` is incorrect, as the same characters must be together.
+Explanation: Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
+Note that "cacaca" is incorrect, as the same characters must be together.
 ```
 
 **Example 3**
@@ -25,8 +25,8 @@ Note that `cacaca` is incorrect, as the same characters must be together.
 ```
 Input: "Aabb"
 Output: "bbAa"
-`bbaA` is also a valid answer, but `Aabb` is incorrect.
-Note that `A` and `a` are treated as two different characters.
+Explanation: "bbaA" is also a valid answer, but "Aabb" is incorrect.
+Note that 'A' and 'a' are treated as two different characters.
 ```
 
 ### Approach:
