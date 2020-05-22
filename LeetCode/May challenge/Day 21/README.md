@@ -74,11 +74,11 @@ here minimum of three values is 1 and 1+1=2. so matrix becomes
 0 1 1 1 
 
 **Note** the value `2` represents the completion of a `2x2` matrix. Now for subsequent values
-
+<pre>
 0 1 1 1     0 1 1 1  
 1 1 2 **1**---> 1 1 2 **2**  
 0 1 1 1     0 1 1 1    
-
+</pre>
 
 0 1 1 1     0 1 1 1  
 1 1 2 2---> 1 1 2 2  
