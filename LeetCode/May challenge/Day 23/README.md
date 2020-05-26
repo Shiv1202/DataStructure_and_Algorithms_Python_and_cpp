@@ -53,4 +53,6 @@ both of the above conditions must follow for an intersecting interval.
            8-------10
            
 output: [[8,8]]
+in this case, (s2>=s1) && (s2<=e1) will follow
 ``` 
+Now, for iterating the `A list` and `B list` we take two pointers, say `aptr` and `bptr` respectively. Now if `e1 < e2` we increase the `aptr` else increase the `bptr`. 
