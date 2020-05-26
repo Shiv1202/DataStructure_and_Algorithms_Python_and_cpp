@@ -29,7 +29,7 @@ Output: [[3,4],[8,9],[11,12]]
 
 **Points to remember**
 * intervals are both inclusive
-* intervals are pairwise disjoint, ie., in no case s1==s2 && e1==e2 simultaneously
+* intervals are pairwise disjoint, ie., in no case `s1==s2 && e1==e2 simultaneously`
 * intervals are sorted in ascending order
 ```
 s1-------------e1 
