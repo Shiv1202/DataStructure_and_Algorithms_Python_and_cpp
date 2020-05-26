@@ -39,10 +39,10 @@ s1-------------e1
 ```
 **Conditions for an intersecting interval**
 * `(e1 >= s2)`
-* `(e2 >= s1)`
+* `(e2 >= s1)`  
 both of the above conditions must follow for an intersecting interval.
 
-**How to find an intersecting interval?**
+**How to find an intersecting interval?**  
 `output : [ max(s1,s2) , min(e1,e2) ]`
 
 **Special case**
