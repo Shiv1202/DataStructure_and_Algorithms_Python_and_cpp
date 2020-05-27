@@ -43,10 +43,7 @@ public:
                     
                     // check if u is already explored 
                     if (explored[u])
-                    {
                         continue;
-                    }
-                    
                     explored[u] = true;
                     
                     // for each neighbor of u, execute this loop
@@ -64,13 +61,9 @@ public:
                         
                         // we color v with the opposite color of u
                         if (color[u] == RED)
-                        {
                             color[v] = BLUE;
-                        }
                         else 
-                        {
                             color[v] = RED;
-                        }
                         
                         q.push(v);
                     }
