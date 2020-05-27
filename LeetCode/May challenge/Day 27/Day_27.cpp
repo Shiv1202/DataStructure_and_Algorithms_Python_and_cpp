@@ -31,7 +31,7 @@ public:
             if (!explored[i])
             {
                 // this component has not been colored yet
-				// we color the first vertex RED and push it into the queue
+		// we color the first vertex RED and push it into the queue
                 color[i] = RED;
                 q.push(i);
                 
@@ -57,8 +57,8 @@ public:
                         // checking if there's any conflict in coloring
                         if (color[v] == color[u])
                         {
-							// conflict edge found, so we return false 
-							// as bi-partition will not be possible
+			// conflict edge found, so we return false 
+			// as bi-partition will not be possible
                             return false;
                         }
                         
