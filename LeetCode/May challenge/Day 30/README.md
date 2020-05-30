@@ -17,7 +17,7 @@ The distance between (1, 3) and the origin is sqrt(10).
 The distance between (-2, 2) and the origin is sqrt(8).
 Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
 We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]].
-
+```
 
 **Example 2**
 
@@ -32,5 +32,6 @@ Output: [[3,3],[-2,4]]
 * `1 <= K <= points.length <= 10000`
 * `-10000 < points[i][0] < 10000`
 * `-10000 < points[i][1] < 10000`
+
 ## Solution
 
