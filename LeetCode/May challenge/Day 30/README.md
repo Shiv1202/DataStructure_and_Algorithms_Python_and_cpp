@@ -35,3 +35,8 @@ Output: [[3,3],[-2,4]]
 
 ## Solution
 
+Sort the points by distance, then take the closest K points.
+
+We map the points to their distance from origin and then return the array of K closest points by sorting and traversing the map  
+OR, we can directly sort the given array of points by passing a custom key in the classic sort function and sort according to the distance of points from the origin and then return the K closest points from that array.
+
