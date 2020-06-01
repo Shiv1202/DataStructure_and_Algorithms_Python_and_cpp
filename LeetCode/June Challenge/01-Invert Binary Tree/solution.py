@@ -21,8 +21,8 @@ class Solution:
     def swap(self, node):
         if node is None:
             return
-        
-        temp = node.left
-        node.left = node.right
-        node.right = temp
-    
+        # By Using third variable
+#         temp = node.left
+#         node.left = node.right
+#         node.right = temp
+        node.left, node.right = node.right, node.left
