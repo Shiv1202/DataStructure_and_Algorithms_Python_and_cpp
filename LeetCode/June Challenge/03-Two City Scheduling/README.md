@@ -28,3 +28,12 @@ The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interv
 
 ## Solution
 
+**Constraints** Assign exactly N candidates to city A and other N candidates to city B.  
+**Goal** Minimize the interview COST.
+
+We can't sort the array on with respect to the first or second element because it will not work in every case.
+
+**Actual cost parameter is how much more we benefit if we chose to go to city A or city B.**
+
+Therefore, we make a `custom comparator function` and sort the array in the `decreasing order of profit` i.e, the cost of going to `city B - city A`. 
+then, simply add the `first value` till `n/2` and then, after that add `second value`,considering we have total of `n` candidates.
