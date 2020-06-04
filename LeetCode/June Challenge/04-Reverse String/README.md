@@ -2,9 +2,9 @@
 
 Write a function that reverses a string. The input string is given as an array of characters `char[]`.
 
-Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with `O(1) extra memory`.
+Do not allocate extra space for another array, you must do this by **modifying the input array in-place with O(1)** extra memory.
 
-You may assume all the characters consist of `printable ascii characters`.
+You may assume all the characters consist of printable ascii characters.
 
 **Example 1**
 
@@ -22,25 +22,58 @@ Output: ["h","a","n","n","a","H"]
 
 ## Solution
 
-**Two Pointers Approach** 
-In this approach, two pointers are used to process two array elements at the same time.
-We set one pointer in the beginning and one at the end and then to move them until they both meet.
+Life is short, use Python.
+```
+def reverseString(self, s):
+  s.reverse()
+```
 
-* Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
+Speaking seriously, let's use this problem to discuss two things:
+* Does *in-place* mean constant space complexity?
+* Two pointers approach.
 
-* While left < right:
-  1. Swap s[left] and s[right].
-  2. Move left pointer one step right, and right pointer one step left.
+**Approach 1**
+**--> Recursion In-place, O(N) Space**
+Here is an example. Let's implement recursive function `helper` which receives two pointers, left and right, as arguments.
 
-Or, using a `for loop` we can `increase and decrease` the `left and right pointer` respectively, till they iterate to `half the size of string`
+* Base case: if `left >= right`, do nothing.
 
-swapping goes as: 
+* Otherwise, swap `s[left]` and `s[right]` and call `helper(left + 1, right - 1)`.
 
-**Input**: a b c d e f
+To solve the problem, call helper function passing the head and tail indexes as arguments: `return helper(0, len(s) - 1)`.
 
-**a** b c d e **f**  
-f **b** c d **e** a  
-f e **c** **d** b a
+Source code file given above.
 
-**Output**: f e d c b a
+**Approach 2**
+**--> Two Pointers, Iteration, O(1) Space**
+In this approach, two pointers are used to process two array elements at the same time. Usual implementation is to set one pointer in the beginning and one at the end and then to move them until they both meet.
+
+*Algorithm*
+* Set pointer left at index `0`, and pointer right at index `n - 1`, where n is a number of elements in the array.
+* When left < right:
+    Swap `s[left]` and `s[right]`.
+    Move left pointer one step right, and right pointer one step left.
+    
+    
+**Example**
+```
+     | H | e | l | l | o |
+       ^               ^                  step1 : swap
+      left            right
+  ----------------------------------------------------------------
+  
+     | o | e | l | l | H |
+           ^       ^                      step2: swap
+          left     right
+  ----------------------------------------------------------------
+  
+     | o | l | l | e | H |
+               ^                          job is Done
+           left = right
+      
+```
+
+**Complexity Analysis**
+* Time complexity : O(N) to swap N/2 element.
+* Space complexity : O(1), it's a constant space solution.
 
