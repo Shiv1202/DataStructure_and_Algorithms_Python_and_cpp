@@ -29,8 +29,8 @@ We set one pointer in the beginning and one at the end and then to move them unt
 * Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
 
 * While left < right:
-** Swap s[left] and s[right].
-** Move left pointer one step right, and right pointer one step left.
+  1. Swap s[left] and s[right].
+  2. Move left pointer one step right, and right pointer one step left.
 
 Or, using a `for loop` we can `increase and decrease` the `left and right pointer` respectively, till they iterate to `half the size of string`
 
