@@ -16,7 +16,8 @@ public:
     {
         int r= rand() % prefix_sum.back();
         return upper_bound(prefix_sum.begin(),prefix_sum.end(),r) - prefix_sum.begin();
-        //upper_bound() returns an iterator pointing to the first element in the range [first, last) that is greater than value, or last if no such element is found. 
+        /*upper_bound() returns an iterator pointing to the first element in the range [first, last) 
+        that is greater than value, or last if no such element is found.*/
     }
     //using linear search
     /*
