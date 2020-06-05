@@ -37,12 +37,15 @@ public:
     /*
     int pickIndex() 
     {
-        int left = 0, right = accu.size();
-        int tgt = rand() % sum;
-        while(left < right){
+        int left = 0, right = prefix_sum.size();
+        int r = rand() % prefix_sum.back();
+        while(left < right)
+        {
             int mid = left + (right-left) / 2;
-            if(accu[mid] <= tgt) left = mid + 1;
-            else right = mid;
+            if(prefix_sum[mid] <= r) 
+                left = mid + 1;
+            else
+                right = mid;
         }
         return right;
     }
