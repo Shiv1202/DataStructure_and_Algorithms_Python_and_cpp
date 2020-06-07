@@ -52,7 +52,7 @@ Input: amount = 5, coins = [1, 2, 5]
 arr = [0] * (amount + 1)  // [0, 0, 0, 0, 0, 0]
 arr[0] = 1               //  [1, 0, 0, 0, 0, 0]
 for coin = 1            //   [1, 1, 1, 1, 1, 1]
-for coin = 2           //    [1, 1, 2, 2, 2, 3]
-for coin = 5          //     [1, 1, 2, 1, 2, 4]
+for coin = 2           //    [1, 1, 2, 2, 3, 3]
+for coin = 5          //     [1, 1, 2, 1, 3, 4]
 return arr[amount]   //      4
 ```
