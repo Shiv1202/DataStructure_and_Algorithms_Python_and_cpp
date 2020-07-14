@@ -18,7 +18,7 @@ def binary_search(arr, first, last, ele):
 # Main Function
 def main():
     arr = [2, 4, 7, 8, 11, 15, 16, 25]
-    x = 8
+    x = 
     result = binary_search(arr, 0, len(arr) - 1, x)
     if(result == -1):
         print("Element is not present in array")
