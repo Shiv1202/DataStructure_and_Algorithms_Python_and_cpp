@@ -3,10 +3,11 @@
  The time complexity of above algorithm is O(n).
 ************************************************"""
 def linear_search(arr, x):
-    for i in range(0, len(arr)):
-        if(arr[i] == x):
-            return i + 1
-    return -1
+    for ele in arr:
+        if ele == x:
+            return True
+             
+    return False
 # Main Function
 def main():
     arr = [2, 3, 4, 10, 40, 45, 76]
